@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/CaptionUtils.js"],"names":["captionId","date","getMonth"],"mappings":";;;;;AAAO,IAAMA,gCAAY,SAAZA,SAAY;AAAA,uCAAoCC,KAAKC,QAAL,EAApC;AAAA,CAAlB","file":"CaptionUtils.js","sourcesContent":["export const captionId = date => `react-day-picker-caption-${date.getMonth()}`;\n"]}

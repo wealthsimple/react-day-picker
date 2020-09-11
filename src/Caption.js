@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { captionId } from './CaptionUtils';
 
 import LocaleUtils from './LocaleUtils';
 
@@ -51,7 +52,11 @@ export default class Caption extends Component {
       onClick,
     } = this.props;
     return (
-      <div className={classNames.caption} role="heading">
+      <div
+        className={classNames.caption}
+        id={captionId(date)}
+        aria-live="polite"
+      >
         <div onClick={onClick} onKeyUp={this.handleKeyUp}>
           {months
             ? `${months[date.getMonth()]} ${date.getFullYear()}`
